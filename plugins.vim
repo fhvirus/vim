@@ -9,3 +9,6 @@ Plug 'rlue/vim-barbaric'
 Plug 'fhvirus/learn-hjkl'
 Plug 'preservim/nerdtree'
 call plug#end()
+
+" for barbaric
+set ttimeoutlen=0
