@@ -8,7 +8,13 @@ Plug 'godlygeek/tabular'
 Plug 'rlue/vim-barbaric'
 Plug 'fhvirus/learn-hjkl'
 Plug 'preservim/nerdtree'
+Plug 'mhinz/vim-startify'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " for barbaric
 set ttimeoutlen=0
+
+" for lightline
+set noshowmode
+let g:lightline = { 'colorscheme': 'wombat' }

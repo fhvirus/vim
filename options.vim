@@ -3,8 +3,9 @@ set encoding=utf-8
 scriptencoding=utf-8
 set fileencoding=utf-8
 
-" se t_Co=256 | sy on | colo monokai
+" se t_Co=256 tgc | sy on | colo monokai
 set t_Co=256
+set termguicolors
 syntax on
 colorscheme monokai
 
@@ -15,7 +16,7 @@ set relativenumber
 set cindent
 set cursorline
 set showcmd
-set scrolloff=3
+set scrolloff=4
 set tabstop=2
 set shiftwidth=2
 set backspace=2
@@ -29,5 +30,5 @@ set ignorecase
 set smartcase
 
 " se nowrap | filet plugin indent on
-" set nowrap
+set nowrap
 filetype plugin indent on

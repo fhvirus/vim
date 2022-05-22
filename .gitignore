@@ -1,5 +1,6 @@
 autoload/*
 colors/*
 plugged/*
+session/*
 .netrwhist
 *.swp
