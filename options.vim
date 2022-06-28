@@ -29,6 +29,9 @@ set incsearch
 set ignorecase
 set smartcase
 
-" se nowrap | filet plugin indent on
-set nowrap
+" se aw tm=50 wrap spr | filet plugin indent on
+set autowrite
+set timeoutlen=50
+set wrap
+set splitright
 filetype plugin indent on
