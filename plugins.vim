@@ -2,8 +2,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'cespare/vim-toml'
 Plug 'pangloss/vim-javascript'
 Plug 'joker1007/vim-markdown-quote-syntax'
-" Plug 'vim-latex/vim-latex'
-Plug 'gi1242/vim-tex-syntax'
+Plug 'vim-latex/vim-latex'
+" Plug 'gi1242/vim-tex-syntax'
 Plug 'godlygeek/tabular'
 Plug 'fhvirus/learn-hjkl'
 Plug 'preservim/nerdtree'
@@ -18,3 +18,11 @@ call plug#end()
 " for lightline
 set noshowmode
 let g:lightline = { 'colorscheme': 'wombat' }
+
+" NERDTree mappings
+nnoremap <silent> n :NERDTreeFocus<CR>
+nnoremap <silent> t :NERDTreeToggle<CR>
+nnoremap <silent> f :NERDTreeFind<CR>
+
+" Startify mappings
+nnoremap <silent> <C-N> :Startify<CR>

@@ -9,11 +9,3 @@ nnoremap r :so ~/.vimrc<CR>
 " for wrap
 nnoremap j gj
 nnoremap k gk
-
-" NERDTree mappings
-nnoremap <silent> n :NERDTreeFocus<CR>
-nnoremap <silent> t :NERDTreeToggle<CR>
-nnoremap <silent> f :NERDTreeFind<CR>
-
-" Startify mappings
-nnoremap <silent> <C-N> :Startify<CR>
