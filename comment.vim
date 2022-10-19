@@ -11,4 +11,4 @@ augroup END
 nnoremap <silent> <C-_> :<C-B>silent <C-E>s,^\(\s*\),\1<C-R>=b:comment_leader<CR> ,e <bar>
 		\s,^\(\s*\)<C-R>=b:comment_leader<CR> <C-R>=b:comment_leader<CR>\s*,\1,e<CR>:nohlsearch<CR>
 vnoremap <silent> <C-_> :<C-B>silent <C-E>g/^/ s,\(\*\),\1<C-R>=b:comment_leader<CR> ,e <bar>
-		\s,\(\s*\)<C-R>=b:comment_leader<CR> <C-R>=b:comment_leader<CR>\s*,\1,e<CR>:nohlsearch<CR>
+		\s,^\(\s*\)<C-R>=b:comment_leader<CR> <C-R>=b:comment_leader<CR>\s*,\1,e<CR>:nohlsearch<CR>

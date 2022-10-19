@@ -3,11 +3,11 @@ set encoding=utf-8
 scriptencoding=utf-8
 set fileencoding=utf-8
 
-" se t_Co=256 tgc | sy on | colo monokai
+" se t_Co=256 tgc | sy on | colo vim-material
 set t_Co=256
 set termguicolors
 syntax on
-colorscheme monokai
+colorscheme nord
 
 " se nu ru rnu cin cul sc so=4 ts=2 sw=2 bs=2 ls=2 bo=a
 set number
@@ -31,7 +31,10 @@ set smartcase
 
 " se aw tm=50 wrap spr | filet plugin indent on
 set autowrite
-set timeoutlen=50
+" set timeoutlen=50
 set wrap
 set splitright
 filetype plugin indent on
+
+setlocal spell
+set spelllang=en_us,cjk

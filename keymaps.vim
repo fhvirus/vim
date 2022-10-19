@@ -1,11 +1,13 @@
-inoremap {<CR> {<CR>}<ESC>O
 inoremap kj <ESC>
 inoremap jk <ESC>
-nmap <F5> :%d<CR>"+P:w<CR>
-nmap <F9> :%y+<CR>
+nmap <F9> :%d _<CR>"+P:w<CR>
+nmap <F10> :%y+<CR>
 nnoremap <silent> <ESC><ESC> :<C-U>set nohlsearch!<CR>
 nnoremap r :so ~/.vimrc<CR>
 
 " for wrap
 nnoremap j gj
 nnoremap k gk
+
+" for spell check
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
