@@ -37,6 +37,7 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " for limelight
+let g:limelight_conceal_ctermfg = 3
 let g:limelight_conceal_guifg = '#616E88'
 
 " for goyo
