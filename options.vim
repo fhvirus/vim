@@ -36,5 +36,5 @@ set wrap
 set splitright
 filetype plugin indent on
 
-setlocal spell
-set spelllang=en_us,cjk
+" setlocal spell
+" set spelllang=en_us,cjk
