@@ -1,5 +1,5 @@
-inoremap kj <ESC>
-inoremap jk <ESC>
+" inoremap kj <ESC>
+" inoremap jk <ESC>
 nmap <F9> :%d _<CR>"+P:w<CR>
 nmap <F10> :%y+<CR>
 nnoremap <silent> <ESC><ESC> :<C-U>set nohlsearch!<CR>

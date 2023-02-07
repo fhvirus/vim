@@ -16,6 +16,8 @@ Plug 'sirver/ultisnips'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'zirrostig/vim-jack-syntax'
+Plug 'itchyny/calendar.vim'
 call plug#end()
 
 " for lightline
@@ -84,6 +86,7 @@ let g:vimtex_compiler_latexmk = {
 		\ 'hooks' : [],
 		\ 'options' : [
 		\   '-pdfxe',
+		\   '-shell-escape',
 		\   '-verbose',
 		\   '-file-line-error',
 		\   '-synctex=1',
@@ -97,3 +100,7 @@ let g:tex_conceal='abdmg'
 let g:tex_superscripts= "[0-9a-zA-W.,:;+-<>/()=]"
 let g:tex_subscripts= "[0-9aehijklmnoprstuvx,+-/().]"
 let g:tex_conceal_frac=1
+
+" for calandar.vim
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
