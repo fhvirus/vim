@@ -18,6 +18,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'zirrostig/vim-jack-syntax'
 Plug 'itchyny/calendar.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " for lightline
@@ -104,3 +106,4 @@ let g:tex_conceal_frac=1
 " for calandar.vim
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
+source ~/.vim/calendar-credentials.vim

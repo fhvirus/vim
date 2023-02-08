@@ -11,3 +11,5 @@ nnoremap k gk
 
 " for spell check
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+command SynID  echo synIDattr(synID(line("."), col("."), 1), "name")

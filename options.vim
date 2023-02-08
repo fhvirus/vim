@@ -34,6 +34,7 @@ set autowrite
 " set timeoutlen=50
 set nowrap
 set splitright
+set nocompatible
 filetype plugin indent on
 
 " setlocal spell
