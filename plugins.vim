@@ -1,7 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'cespare/vim-toml'
-Plug 'pangloss/vim-javascript'
-Plug 'joker1007/vim-markdown-quote-syntax'
 Plug 'godlygeek/tabular'
 Plug 'fhvirus/learn-hjkl'
 Plug 'preservim/nerdtree'
@@ -10,16 +7,22 @@ Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color', { 'for': 'css' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'mattn/emmet-vim', { 'for': 'html' }
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
+Plug 'zirrostig/vim-jack-syntax', {'for': 'jack'}
+Plug 'cespare/vim-toml', {'for': 'toml'}
+Plug 'pangloss/vim-javascript', {'for': 'js'}
+Plug 'joker1007/vim-markdown-quote-syntax', {'for': 'md'}
 Plug 'sirver/ultisnips'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'zirrostig/vim-jack-syntax'
 Plug 'itchyny/calendar.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'simnalamburt/vim-mundo'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 call plug#end()
 
 " for lightline
@@ -104,6 +107,10 @@ let g:tex_subscripts= "[0-9aehijklmnoprstuvx,+-/().]"
 let g:tex_conceal_frac=1
 
 " for calandar.vim
+let g:calendar_endian = "big"
+let g:calendar_date_separator = "-"
+let g:calendar_week_number = 1
+let g:calendar_frame = "unicode"
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 source ~/.vim/calendar-credentials.vim
