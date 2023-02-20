@@ -83,6 +83,10 @@ snippet ali "Align" bA
 .\end{align*}
 endsnippet
 
+snippet vv "Verbatim" wA
+\verb|${1}|
+endsnippet
+
 snippet mk "Inline Math" wA
 $${1}$`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
@@ -113,6 +117,12 @@ snippet plot "Plot" w
 	\caption{$8}
 	\label{${9:$8}}
 \end{figure}
+endsnippet
+
+snippet mint "Minted" bA
+\begin{minted}{${1:text}}
+$0
+\end{minted}
 endsnippet
 
 ###############[ Tools ]###############

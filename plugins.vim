@@ -13,6 +13,7 @@ Plug 'zirrostig/vim-jack-syntax', {'for': 'jack'}
 Plug 'cespare/vim-toml', {'for': 'toml'}
 Plug 'pangloss/vim-javascript', {'for': 'js'}
 Plug 'joker1007/vim-markdown-quote-syntax', {'for': 'md'}
+Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'cpp'}
 Plug 'sirver/ultisnips'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'

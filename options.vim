@@ -39,3 +39,5 @@ filetype plugin indent on
 
 " setlocal spell
 " set spelllang=en_us,cjk
+
+abbr owoPATH ~/cp/owo
