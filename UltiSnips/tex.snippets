@@ -26,6 +26,22 @@ snippet homework "Homework template" b
 \end{document}
 endsnippet
 
+snippet fhw "FHW template" b
+\documentclass{fhw}
+
+\author{$1}
+\title{$2}
+\ID{$3}
+\CourseID{$4}
+\CourseName{$5}
+\print${6:false}
+
+\begin{document}
+	\maketitle
+	$0
+\end{document}
+endsnippet
+
 ###############[ Environments ]###############
 
 snippet beg "begin{} / end{}" bA
@@ -160,10 +176,10 @@ endsnippet
 
 ###############[ Abbreviations ]###############
 
-priority 100
-snippet ... "ldots" iA
-\ldots
-endsnippet
+# priority 100
+# snippet ... "ldots" iA
+# \ldots
+# endsnippet
 
 ###############[ Math Abbreviations ]###############
 
@@ -239,7 +255,7 @@ endsnippet
 priority 300
 context "math()"
 snippet dint "integral" wA
-\int_{${1:-\infty}}^{${2:\infty}} ${3:${VISUAL}} $0
+\int_{${1:-\infty}}^{${2:\infty}} ${3:${VISUAL}} \mathrm{d}${4:x} $0
 endsnippet
 
 priority 300

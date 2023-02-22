@@ -23,6 +23,7 @@ set shiftwidth=2
 set backspace=2
 set laststatus=2
 set belloff=all
+set expandtab
 
 " se hls is ic scs
 set hlsearch
