@@ -60,7 +60,7 @@ snippet fig "Figure environment" b
 endsnippet
 
 snippet enum "Enumerate" bA
-\begin{enumerate}[${1:1.}]
+\begin{enumerate}
 	\item $0
 \end{enumerate}
 endsnippet
@@ -91,7 +91,7 @@ snippet inline "Inline Minted" w
 \mintinline{${1:text}}{$2}$0
 endsnippet
 
-snippet mk "Math" wA
+snippet mk "Math" w
 $${1}$`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
 	snip.rv = ' '
@@ -100,13 +100,13 @@ else:
 `$2
 endsnippet
 
-snippet dm "Math" wA
+snippet dm "Math" w
 \[
-${1:${VISUAL}}
-\] $0
+	${1:${VISUAL}}
+\]$0
 endsnippet
 
-snippet ali "Align" bA
+snippet ali "Align" b
 \begin{align*}
 	${1:${VISUAL}}
 \end{align*}
@@ -173,6 +173,16 @@ snippet iff "iff" Ai
 endsnippet
 
 context "math()"
+snippet app "approx" Aw
+\approx
+endsnippet
+
+context "math()"
+snippet uni "unit" w
+\unit{$1}
+endsnippet
+
+context "math()"
 snippet // "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
@@ -227,7 +237,7 @@ endsnippet
 
 context "math()"
 snippet floor "floor" iA
-\left\lfloor $1 \right\rfloor$0
+\left\lfloor $1 \right\rfloor $0
 endsnippet
 
 snippet pmat "pmat" iA
@@ -301,8 +311,8 @@ snippet part "d/dx" w
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
-\sqrt${1}{${2:${VISUAL}}} $0
+snippet '(?<!\\)sq' "\sqrt{}" riA
+\sqrt{${1:${VISUAL}}}$0
 endsnippet
 
 context "math()"
@@ -464,8 +474,13 @@ endsnippet
 
 priority 200
 context "math()"
-snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|int)' "ln" rwA
+snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
+endsnippet
+
+snippet '`([a-zA-Z])' "greek letters" rw
+\\`!p transliteration = {"a": "alpha", "b": "beta", "g": "gamma", "G": "Gamma", "d": "delta", "D": "Delta", "e": "epsilon", "E": "varepsilon", "z": "zeta", "h": "eta", "q": "theta", "Q": "Theta", "k": "kappa", "i": "iota", "l": "lambda", "L": "Lambda", "m": "mu", "n": "nu", "x": "xi", "X": "Xi", "p": "pi", "P": "Pi", "r": "rho", "s": "sigma", "S": "Sigma", "o": "omega", "O": "Omega", "c": "chi", "f": "phi", "F": "Phi", "y": "upsilon", "Y": "Upsilon", "v": "psi", "V": "Psi", "t": "tau" };
+snip.rv = transliteration[match.group(1)]`
 endsnippet
 
 priority 100
@@ -603,9 +618,9 @@ snippet case "cases" wA
 \end{cases}
 endsnippet
 
-snippet SI "SI" iA
-\SI{$1}{$2}
-endsnippet
+# snippet SI "SI" iA
+# \SI{$1}{$2}
+# endsnippet
 
 snippet bigfun "Big function" iA
 \begin{align*}
@@ -656,40 +671,45 @@ endsnippet
 
 context "env('algorithmic')"
 snippet for "For" bA
-\For {$1}
+\For{$1}
 $2
 \EndFor$0
 endsnippet
 
 context "env('algorithmic')"
 snippet while "While" bA
-\While {$1}
+\While{$1}
 $2
 \EndWhile$0
 endsnippet
 
 context "env('algorithmic')"
 snippet if "If" bA
-\If {$1}
+\If{$1}
 $2
 \EndIf$0
 endsnippet
 
 context "env('algorithmic')"
 snippet proc "Procedure" bA
-\Procedure {$1}{$2}
+\Procedure{$1}{$2}
 $3
 \EndProcedure$0
 endsnippet
 
 context "env('algorithmic')"
 snippet sta "State" bA
-\State {$1}$0
+\State{$1}$0
+endsnippet
+
+context "env('algorithmic')"
+snippet ret "Return" bA
+\Return{$1}$0
 endsnippet
 
 context "env('algorithmic')"
 snippet // "Comment" w
-\Comment {$1}$0
+\Comment{$1}$0
 endsnippet
 
 # vim:ft=snippets

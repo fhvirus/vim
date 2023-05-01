@@ -24,6 +24,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'stephpy/vim-yaml'
 call plug#end()
 
 " for lightline
@@ -43,6 +44,7 @@ let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit = 'vertical'
 
 " for limelight
 let g:limelight_conceal_ctermfg = 3
