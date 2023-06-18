@@ -101,7 +101,8 @@ let g:vimtex_compiler_latexmk = {
 		\   '-interaction=nonstopmode',
 		\ ],
 		\}
-set conceallevel=2
+
+" set conceallevel=2
 let g:tex_conceal='abdmg'
 
 " for tex-conceal

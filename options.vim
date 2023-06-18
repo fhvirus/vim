@@ -37,6 +37,7 @@ set autowrite
 set nowrap
 set splitright
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 " setlocal spell
 " set spelllang=en_us,cjk
