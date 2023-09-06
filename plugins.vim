@@ -18,7 +18,6 @@ Plug 'sirver/ultisnips'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'itchyny/calendar.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'simnalamburt/vim-mundo'
@@ -109,12 +108,3 @@ let g:tex_conceal='abdmg'
 let g:tex_superscripts= "[0-9a-zA-W.,:;+-<>/()=]"
 let g:tex_subscripts= "[0-9aehijklmnoprstuvx,+-/().]"
 let g:tex_conceal_frac=1
-
-" for calandar.vim
-let g:calendar_endian = "big"
-let g:calendar_date_separator = "-"
-let g:calendar_week_number = 1
-let g:calendar_frame = "unicode"
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
-source ~/.vim/calendar-credentials.vim
