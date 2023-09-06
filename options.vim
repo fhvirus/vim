@@ -10,7 +10,7 @@ syntax on
 colorscheme nord
 set nocompatible
 
-" se nu ru rnu cin cul sc so=4 ts=2 sw=2 bs=2 ls=2 bo=a
+" se nu ru rnu cin cul sc so=4 ts=2 sw=2 sts=2 bs=2 ls=2 bo=a
 set number
 set ruler
 set relativenumber
@@ -20,6 +20,7 @@ set showcmd
 set scrolloff=4
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set backspace=2
 set laststatus=2
 set belloff=all
@@ -42,4 +43,4 @@ set omnifunc=syntaxcomplete#Complete
 " setlocal spell
 " set spelllang=en_us,cjk
 
-abbr owoPATH ~/cp/owo
+abbr owoPATH ~/code/owo
