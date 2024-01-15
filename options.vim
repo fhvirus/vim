@@ -5,6 +5,7 @@ set fileencoding=utf-8
 
 " se t_Co=256 tgc | sy on | colo vim-material
 set t_Co=256
+set term=xterm-256color
 set termguicolors
 syntax on
 colorscheme nord
