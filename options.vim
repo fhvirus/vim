@@ -10,6 +10,7 @@ set termguicolors
 syntax on
 colorscheme nord
 set nocompatible
+hi Normal guibg=NONE ctermbg=NONE
 
 " se nu ru rnu cin cul sc so=4 ts=2 sw=2 sts=2 bs=2 ls=2 bo=a
 set number
