@@ -1,3 +1,5 @@
+This repo has been archived/deprecated since I no longer use vim for daily purposes.
+
 # vimrc
 
 Usage:
