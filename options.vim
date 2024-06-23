@@ -34,15 +34,14 @@ set incsearch
 set ignorecase
 set smartcase
 
-" se aw tm=50 nowrap spr | filet plugin indent on
+" se aw nowrap spr | filet plugin indent on
 set autowrite
-" set timeoutlen=50
 set nowrap
 set splitright
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
-" setlocal spell
-" set spelllang=en_us,cjk
+let mapleader = " "
+set timeoutlen=2000
 
 abbr owoPATH ~/code/owo

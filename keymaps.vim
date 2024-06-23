@@ -1,7 +1,7 @@
 " inoremap kj <ESC>
 " inoremap jk <ESC>
-nmap <F9> :%d _<CR>"+P:w<CR>
-nmap <F10> :%y+<CR>
+nmap <leader>pp :%d _<CR>"+P:w<CR>
+nmap <leader>yy :%y+<CR>
 nnoremap <silent> <ESC><ESC> :<C-U>set nohlsearch!<CR>
 nnoremap r :so ~/.vimrc<CR>
 

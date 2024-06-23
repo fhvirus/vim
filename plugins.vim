@@ -6,11 +6,10 @@ Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color', { 'for': 'css' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
-Plug 'zirrostig/vim-jack-syntax', {'for': 'jack'}
 Plug 'cespare/vim-toml', {'for': 'toml'}
+Plug 'stephpy/vim-yaml', {'for': 'yaml'}
 Plug 'pangloss/vim-javascript', {'for': 'js'}
 Plug 'joker1007/vim-markdown-quote-syntax', {'for': 'md'}
 Plug 'octol/vim-cpp-enhanced-highlight', {'for': 'cpp'}
@@ -18,12 +17,7 @@ Plug 'sirver/ultisnips'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'simnalamburt/vim-mundo'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'stephpy/vim-yaml'
 call plug#end()
 
 " for lightline
